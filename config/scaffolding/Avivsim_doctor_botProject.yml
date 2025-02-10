@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: Avivsim_doctor_botProject
+  gitServerName: AvivSimDS_GitHub
+  gitUrl: https://github.com/AvivSimDS
+  gitUsername: AvivSimDS
+  gitBranch: main

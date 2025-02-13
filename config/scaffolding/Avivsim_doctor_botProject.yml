@@ -11,11 +11,11 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
-- serviceName: project.avivsim_doctor_bot.integrations:AvivSimTestDB_3
+- serviceName: project.avivsim_doctor_bot.integrations:AvivSimTestDB_4
   packages:
   - name: Avivsim_doctor_botProject
     version: "1.0"
-- serviceName: project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:SelectSingleEvidence
+- serviceName: project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:SelectAllInterviews
   packages:
   - name: Avivsim_doctor_botProject
     version: "1.0"

@@ -11,7 +11,7 @@ packages:
   wpmServer: https://packages.webmethods.io
   wpmRegistry: licensed
 services:
-- serviceName: project.avivsim_doctor_bot.integrations:AvivSimTestDB_4
+- serviceName: project.avivsim_doctor_bot.integrations:AvivSimTestDB_5
   packages:
   - name: Avivsim_doctor_botProject
     version: "1.0"

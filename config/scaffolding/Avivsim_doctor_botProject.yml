@@ -15,7 +15,7 @@ services:
   packages:
   - name: Avivsim_doctor_botProject
     version: "1.0"
-- serviceName: project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:SelectAllInterviews
+- serviceName: project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.operations.actions:AllInterviews
   packages:
   - name: Avivsim_doctor_botProject
     version: "1.0"

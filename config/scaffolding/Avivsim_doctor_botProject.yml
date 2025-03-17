@@ -15,6 +15,10 @@ services:
   packages:
   - name: Avivsim_doctor_botProject
     version: "1.0"
+- serviceName: project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:avivsim_hmo_1_db_account_2
+  packages:
+  - name: Avivsim_doctor_botProject
+    version: "1.0"
 - serviceName: project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections:avivsim_hmo_db_meuhedet
   packages:
   - name: Avivsim_doctor_botProject
@@ -44,14 +48,20 @@ configurationVariables:
   : "1"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.datasourceClass
   : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionManagerSettings.poolable
+  : "false"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionSettings.transactionType
   : NO_TRANSACTION
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSimOnPremSAGLaptop.connectionSettings.dbType
   : MySQL
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account.connectionManagerSettings.startupRetryCount
   : "0"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.keyStore
+  : ""
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionSettings.otherProperties
   : loginTimeout=60;
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionManagerSettings.startupBackoffSecs
+  : "10"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionSettings.networkProtocol
   : ""
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionManagerSettings.maximumPoolSize
@@ -96,12 +106,16 @@ configurationVariables:
   : "3306"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSim_SAG_Laptop_DB.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.driverType
+  : mysql_connector_java_8023
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.databaseName
   : infermedicadb
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionSettings.password
   : "{AES}PTWq2hgg4RimZ8H0r79NmA=="
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.user
+  : wmuser
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSim_SAG_Laptop_DB.connectionSettings.serverName
   : host.docker.internal
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account.connectionManagerSettings.poolIncrementSize
@@ -114,8 +128,12 @@ configurationVariables:
   : NO_TRANSACTION
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account.connectionSettings.databaseName
   : infermedicadb
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.transactionType
+  : NO_TRANSACTION
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSim_SAG_Laptop_DB.connectionSettings.datasourceClass
   : com.mysql.cj.jdbc.MysqlDataSource
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.password
+  : "{AES}PTWq2hgg4RimZ8H0r79NmA=="
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.serverName
   : host.docker.internal
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSimOnPremSAGLaptop.connectionSettings.password
@@ -136,6 +154,10 @@ configurationVariables:
   : "1000"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.maximumPoolSize
   : "10"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.networkProtocol
+  : tcp
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.databaseName
+  : InfermedicaDB
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSim_SAG_Laptop_DB.connectionManagerSettings.startupBackoffSecs
   : "10"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSim_SAG_Laptop_DB.connectionSettings.trustStore
@@ -149,6 +171,8 @@ configurationVariables:
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSimOnPremSAGLaptop.connectionSettings.portNumber
   : "3306"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSim_SAG_Laptop_DB.connectionManagerSettings.minimumPoolSize
+  : "1"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account.connectionEnabled
   : "false"
@@ -174,10 +198,14 @@ configurationVariables:
   : ""
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSim_SAG_Laptop_DB.connectionSettings.transactionType
   : NO_TRANSACTION
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.serverName
+  : 10.240.64.29
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionSettings.driverType
   : mysql_connector_java_8023
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionSettings.databaseName
   : InfermedicaDB
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionEnabled
+  : "false"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSim_SAG_Laptop_DB.connectionSettings.otherProperties
   : loginTimeout=60;
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSimOnPremSAGLaptop.connectionManagerSettings.startupBackoffSecs
@@ -202,6 +230,8 @@ configurationVariables:
   : "10"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.heartBeatInterval
   : "0"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.datasourceClass
+  : com.mysql.cj.jdbc.MysqlDataSource
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.maximumPoolSize
   : "10"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSim_SAG_Laptop_DB.connectionManagerSettings.maximumPoolSize
@@ -232,6 +262,10 @@ configurationVariables:
   : "1"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account.connectionSettings.password
   : "{AES}PTWq2hgg4RimZ8H0r79NmA=="
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionManagerSettings.startupRetryCount
+  : "0"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.trustStore
+  : ""
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionManagerSettings.poolIncrementSize
   : "1"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSimOnPremSAGLaptop.connectionSettings.networkProtocol
@@ -250,6 +284,8 @@ configurationVariables:
   : "10"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSimOnPremSAGLaptop.connectionEnabled
   : "false"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionManagerSettings.expireTimeout
+  : "1000"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSim_SAG_Laptop_DB.connectionManagerSettings.poolable
   : "false"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account.connectionSettings.networkProtocol
@@ -264,9 +300,13 @@ configurationVariables:
   : infermedicadb
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.transactionType
   : NO_TRANSACTION
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.otherProperties
+  : loginTimeout=60;
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionManagerSettings.expireTimeout
   : "1000"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionManagerSettings.blockingTimeout
+  : "1000"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionManagerSettings.blockingTimeout
   : "1000"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSimOnPremSAGLaptop.connectionSettings.otherProperties
   : loginTimeout=60;
@@ -274,6 +314,8 @@ configurationVariables:
   : "1"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionManagerSettings.poolable
   : "false"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionManagerSettings.maximumPoolSize
+  : "10"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.otherProperties
   : loginTimeout=60;
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.dbType
@@ -284,8 +326,12 @@ configurationVariables:
   : MySQLDriverGroup8
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.portNumber
+  : "3306"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSimOnPremSAGLaptop.connectionSettings.user
   : root
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionSettings.dbType
+  : MySQL
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionSettings.user
   : root
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.keyStore
@@ -294,6 +340,8 @@ configurationVariables:
   : "0"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionManagerSettings.expireTimeout
   : "1000"
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionManagerSettings.minimumPoolSize
+  : "1"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_2.connectionEnabled
   : "false"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.AvivSimOnPremSAGLaptop.connectionSettings.transactionType
@@ -304,6 +352,8 @@ configurationVariables:
   : MySQL
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.Database_3.connectionSettings.password
   : "{AES}aYrXC43dTWsDUHRWG5mhTA=="
+  ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account_2.connectionManagerSettings.heartBeatInterval
+  : "0"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_db_meuhedet.connectionManagerSettings.startupRetryCount
   : "0"
   ? artConnection.Avivsim_doctor_botProject.project.avivsim_doctor_bot.WmJDBCAdapter.com_wm_adapter_wmjdbc_JDBCAdapter.connections.avivsim_hmo_1_db_account.connectionSettings.user
